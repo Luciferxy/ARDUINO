@@ -1,0 +1,49 @@
+{
+  "board": "Arduino UNO",
+  "port": "/dev/cu.usbmodem1101",
+  "components": [
+    {
+      "name": "I2C LCD 16x2",
+      "pins": "SDA on A4, SCL on A5",
+      "address": "0x27",
+      "library": "<LiquidCrystal_I2C.h>",
+      "notes": "LiquidCrystal_I2C lcd(0x27, 16, 2); initialized with lcd.init(); lcd.backlight();"
+    },
+    {
+      "name": "DHT11 Temperature & Humidity Sensor",
+      "pins": "Digital Pin 7",
+      "library": "<DHT.h>",
+      "notes": "DHT dht(7, DHT11); dht.begin(); readTemperature() and readHumidity()"
+    },
+    {
+      "name": "Room Light / Main LED",
+      "pins": "Digital Pin 4",
+      "notes": "Digital output driving room lighting / LED. Automatically turns ON when dark (LDR < 50) or via AI command."
+    },
+    {
+      "name": "LDR (Photoresistor)",
+      "pins": "Analog Pin A0",
+      "notes": "Read with analogRead(A0) to measure ambient light level (< 50 = dark, >= 70 = bright)"
+    },
+    {
+      "name": "AC Status / Comfort LED",
+      "pins": "Digital Pin 6",
+      "notes": "Turns ON when AI recommends turning ON the AC (hot/humid conditions)"
+    },
+    {
+      "name": "Alert / Indicator LED",
+      "pins": "Digital Pin 5",
+      "notes": "General alert / notification indicator"
+    },
+    {
+      "name": "Buzzer",
+      "pins": "Digital Pin 8",
+      "notes": "Generates audio chimes and alerts. Supports tone(8, freq) and DC drive; noTone(8) to silence."
+    },
+    {
+      "name": "Built-in LED",
+      "pins": "Digital Pin 13",
+      "notes": "Standard onboard LED"
+    }
+  ]
+}
