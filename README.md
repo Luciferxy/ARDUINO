@@ -183,8 +183,8 @@ pip install -r requirements.txt
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/neural-maze/neural-hub.git
-   cd neural-hub/arduino-agent
+   git clone https://github.com/Luciferxy/ARDUINO.git
+   cd ARDUINO
    ```
 
 2. **Configure environment variables**:
@@ -353,4 +353,4 @@ ollama run qwen2.5-coder:3b
 
 ## 📄 License
 
-This project is licensed under the MIT License. See the root [LICENSE](../LICENSE) file for details.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
